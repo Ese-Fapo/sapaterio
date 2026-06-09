@@ -2,8 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { Clock, MapPin, MessageCircle, ShieldCheck, Sparkles, Star } from "lucide-react"
 
+
 export const whatsappLink = "https://wa.me/5548991204464"
 export const googleReviewLink = "https://g.page/r/CbEZNWk2EheKEBM/review"
+export const googleLocationLink =
+  "https://www.google.com/search?q=realparqe+sapataria&oq=realparqe+sapataria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2MDY5ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8"
 
 const serviceHighlights = [
   {
@@ -258,6 +261,14 @@ export function ContactSection() {
             <p className="mt-2 break-words text-slate-700">
               {address}
             </p>
+            <a
+              href={googleLocationLink}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 inline-flex rounded-md bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-black"
+            >
+              Ver no Google
+            </a>
           </article>
           <article className="rounded-lg border-2 border-black bg-white p-6 sm:col-span-2">
             <Clock className="size-7 text-red-600" aria-hidden="true" />
@@ -314,6 +325,14 @@ export function Footer() {
           <p className="font-bold text-yellow-300">Contacto</p>
           <div className="mt-3 grid gap-2 text-sm leading-6 text-slate-300">
             <p className="break-words">{address}</p>
+            <a
+              href={googleLocationLink}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-yellow-300 hover:text-white"
+            >
+              Ver localização no Google
+            </a>
             <a href="tel:+5548991204464" className="hover:text-yellow-300">
               (48) 99120-4464
             </a>
@@ -325,7 +344,17 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-8 flex max-w-7xl flex-col gap-2 border-t border-white/15 pt-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 Real Park Sapataria e Costureira. Todos os direitos reservados.</p>
-        <p>Feito para atendimento local.</p>
+        <p>
+          Desenvolvido por:{" "}
+          <a
+            href="https://sitesprofissionai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-yellow-300 transition hover:text-white"
+          >
+            Sites Profissionai
+          </a>
+        </p>
       </div>
     </footer>
   )
@@ -333,24 +362,22 @@ export function Footer() {
 
 export function FloatingActions() {
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-3 sm:bottom-6 sm:right-6">
-      <a
-        href={googleReviewLink}
-        target="_blank"
-        rel="noreferrer"
-        className="flex size-12 items-center justify-center rounded-full border border-slate-200 bg-white text-lg font-bold text-blue-600 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
-        aria-label="Avaliar no Google"
-      >
-        G
-      </a>
+    <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
       <a
         href={whatsappLink}
         target="_blank"
         rel="noreferrer"
-        className="flex size-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl"
+        className="whatsapp-beat relative flex size-16 items-center justify-center rounded-full bg-[#25d366] text-white shadow-2xl ring-4 ring-white transition hover:-translate-y-0.5 hover:bg-[#1ebe5d] sm:size-20"
         aria-label="Enviar mensagem pelo WhatsApp"
       >
-        <MessageCircle className="size-7" aria-hidden="true" />
+        <span className="absolute inset-0 rounded-full bg-[#25d366]/40" aria-hidden="true" />
+        <svg
+          viewBox="0 0 32 32"
+          className="relative size-9 fill-current sm:size-11"
+          aria-hidden="true"
+        >
+          <path d="M16.01 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.12 29l6.82-1.79a12.7 12.7 0 0 0 6.07 1.55h.01c7.04 0 12.77-5.73 12.77-12.78S23.06 3.2 16.01 3.2Zm0 23.4h-.01c-1.9 0-3.77-.51-5.4-1.47l-.39-.23-4.05 1.06 1.08-3.95-.26-.41a10.55 10.55 0 0 1-1.62-5.62c0-5.87 4.78-10.65 10.66-10.65 2.84 0 5.52 1.11 7.53 3.12a10.58 10.58 0 0 1 3.12 7.53c0 5.88-4.78 10.66-10.65 10.66Zm5.84-7.98c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.58-1.59-.95-.85-1.6-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.98-2.34-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.07 1.3 3.28c.16.21 2.25 3.43 5.45 4.81.76.33 1.36.52 1.82.67.77.24 1.46.21 2.01.13.61-.09 1.89-.77 2.15-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37Z" />
+        </svg>
       </a>
     </div>
   )
