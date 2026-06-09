@@ -2,11 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Clock, MapPin, MessageCircle, ShieldCheck, Sparkles, Star } from "lucide-react"
 
-
 export const whatsappLink = "https://wa.me/5548991204464"
 export const googleReviewLink = "https://g.page/r/CbEZNWk2EheKEBM/review"
-export const googleLocationLink =
-  "https://www.google.com/search?q=realparqe+sapataria&oq=realparqe+sapataria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2MDY5ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8"
+export const googleLocationLink = "https://share.google/WNXUAfSi5QWILzymm"
 
 const serviceHighlights = [
   {
@@ -27,23 +25,22 @@ const testimonials = [
   {
     name: "Ketlim L.",
     date: "há 2 semanas",
-    text: `Excelente atendimento!
-Deixei uma mala de viagem para arrumar a rodinha de última hora. Não foi possível arrumar pois o material iria demorar um pouquinho pra chegar (o que é compreensível pois deixei a mala apenas dois dias antes da viagem) mas mesmo assim o moço tentou buscar o material com colegas e etc. Logo me avisou que não seria possível arrumar a tempo. Foi super honesto e atencioso com certeza voltarei a buscar os serviços deles.`,
+    text: "Excelente atendimento! Deixei uma mala de viagem para arrumar a rodinha de última hora. Mesmo não sendo possível arrumar a tempo, foram honestos, atenciosos e tentaram ajudar. Com certeza voltarei.",
   },
   {
     name: "Flavio S.",
     date: "há 1 mês",
-    text: "Simplesmente sensacional, levei dois tênis e uma mochila, ficou do jeitinho que eu queria, os tênis estavam soltando a sola, colaram e costuraram e a mochila tbm, foi reformada. Super recomendo.",
+    text: "Simplesmente sensacional. Levei dois tênis e uma mochila, ficou do jeitinho que eu queria. Colaram, costuraram e reformaram. Super recomendo.",
   },
   {
     name: "Roni M.",
     date: "há 3 semanas",
-    text: "Ótima experiência, veio tudo de acordo como eu pedi, atendimento nota 10!!!!! Muito obrigado, com certeza voltarei a usar os serviços de vocês.",
+    text: "Ótima experiência, veio tudo de acordo como eu pedi. Atendimento nota 10. Muito obrigado, com certeza voltarei a usar os serviços.",
   },
   {
     name: "Rafael A.",
     date: "há 1 mês",
-    text: "A foto 3x4 ficou pronta rápido e serviu para o documento.",
+    text: "A foto 3x4 ficou pronta rápido e serviu perfeitamente para o documento.",
   },
 ]
 
@@ -204,7 +201,9 @@ export function TestimonialsCertificatesSection() {
                     <Star key={starIndex} className="size-4 fill-current" aria-hidden="true" />
                   ))}
                 </div>
-                <p className="mt-3 text-sm leading-7 text-slate-700">“{review.text}”</p>
+                <p className="mt-3 text-sm leading-7 text-slate-700">
+                  &ldquo;{review.text}&rdquo;
+                </p>
                 <p className="mt-4 text-xs font-medium text-slate-500">
                   Avaliação de cliente
                 </p>
@@ -258,9 +257,7 @@ export function ContactSection() {
           <article className="rounded-lg border-2 border-black bg-white p-6">
             <MapPin className="size-7 text-red-600" aria-hidden="true" />
             <h3 className="mt-4 text-xl font-bold text-black">Localização</h3>
-            <p className="mt-2 break-words text-slate-700">
-              {address}
-            </p>
+            <p className="mt-2 break-words text-slate-700">{address}</p>
             <a
               href={googleLocationLink}
               target="_blank"
@@ -345,7 +342,7 @@ export function Footer() {
       <div className="mx-auto mt-8 flex max-w-7xl flex-col gap-2 border-t border-white/15 pt-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 Real Park Sapataria e Costureira. Todos os direitos reservados.</p>
         <p>
-          Desenvolvido por:{" "}
+          Desenvolvido por{" "}
           <a
             href="https://sitesprofissionai.com/"
             target="_blank"
