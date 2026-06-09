@@ -22,19 +22,20 @@ const serviceHighlights = [
 
 const testimonials = [
   {
-    name: "Mariana S.",
+    name: "Ketlim L.",
     date: "há 2 semanas",
-    text: "Atendimento rápido e meu sapato voltou firme para usar no trabalho.",
+    text: `Excelente atendimento!
+Deixei uma mala de viagem para arrumar a rodinha de última hora. Não foi possível arrumar pois o material iria demorar um pouquinho pra chegar (o que é compreensível pois deixei a mala apenas dois dias antes da viagem) mas mesmo assim o moço tentou buscar o material com colegas e etc. Logo me avisou que não seria possível arrumar a tempo. Foi super honesto e atencioso com certeza voltarei a buscar os serviços deles.`,
   },
   {
-    name: "Carlos M.",
+    name: "Flavio S.",
     date: "há 1 mês",
-    text: "Ajustaram minha calça do jeito certo. Serviço caprichado.",
+    text: "Simplesmente sensacional, levei dois tênis e uma mochila, ficou do jeitinho que eu queria, os tênis estavam soltando a sola, colaram e costuraram e a mochila tbm, foi reformada. Super recomendo.",
   },
   {
-    name: "Juliana P.",
+    name: "Roni M.",
     date: "há 3 semanas",
-    text: "Fiz cópia de chave e xerox no mesmo lugar, muito prático.",
+    text: "Ótima experiência, veio tudo de acordo como eu pedi, atendimento nota 10!!!!! Muito obrigado, com certeza voltarei a usar os serviços de vocês.",
   },
   {
     name: "Rafael A.",
