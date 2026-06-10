@@ -8,30 +8,35 @@ const categories = [
     name: "Sapataria",
     image: "/image/shoe-icon.jpeg",
     accent: "border-red-600",
+    description: "Reparamos seus calçados com acabamento impecável, conforto e durabilidade.",
     href: "/sapataria",
   },
   {
     name: "Costureira",
     image: "/image/tailor-icon.jpeg",
     accent: "border-yellow-400",
+    description: "Ajustes e reformas com cuidado, acabamento perfeito e atendimento atento.",
     href: "/costureira",
   },
   {
     name: "3x4 foto",
     image: "/image/Foto 3x4 icon.png",
     accent: "border-black",
+    description: "Fotos 3x4 nítidas e prontas na hora para documentos e passaportes.",
     href: "/foto-3x4",
   },
   {
     name: "Chaveiro",
     image: "/image/key-icon.png",
     accent: "border-red-600",
+    description: "Cópias de chaves e serviços de chaveiro com rapidez, segurança e confiança.",
     href: "/chaveiro",
   },
   {
     name: "Xerox",
     image: "/image/xerox-icon.png",
     accent: "border-yellow-400",
+    description: "Impressões e cópias com qualidade, preço justo e entrega rápida.",
     href: "/xerox",
   },
 ]
@@ -66,7 +71,10 @@ const Catergorie = () => {
                 <h3 className="mt-6 text-2xl font-bold text-black">
                   {category.name}
                 </h3>
-                <span className="mt-4 inline-flex rounded-md bg-red-600 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-black">
+                <p className="mt-3 text-sm leading-6 text-slate-700">
+                  {category.description}
+                </p>
+                <span className="mt-5 inline-flex rounded-md bg-red-600 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-black">
                   Ver mais
                 </span>
               </>

@@ -2,7 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { Clock, MapPin, MessageCircle, ShieldCheck, Sparkles, Star } from "lucide-react"
 
-export const whatsappLink = "https://wa.me/5548991204464"
+const whatsappMessage = encodeURIComponent(
+  "Olá! Gostaria de receber um orçamento para o serviço. Você pode me ajudar com preços e horários de atendimento?"
+)
+export const whatsappLink = `https://wa.me/5548991204464?text=${whatsappMessage}`
 export const googleReviewLink = "https://g.page/r/CbEZNWk2EheKEBM/review"
 export const googleLocationLink = "https://share.google/WNXUAfSi5QWILzymm"
 
