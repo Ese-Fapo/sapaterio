@@ -38,7 +38,7 @@ function Header() {
           />
           <div className="min-w-0 leading-tight">
             <p className="max-w-[13rem] truncate text-sm font-bold text-white sm:max-w-none sm:text-xl">
-              Real Park Sapataria e Costureira
+              Real Park Sapataria e   Costureira
             </p>
             <p className="hidden text-sm font-medium text-yellow-200 sm:block">
               Consertos, ajustes e serviços rápidos

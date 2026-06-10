@@ -16,8 +16,8 @@ const serviceHighlights = [
     text: "Foto 3x4, xerox e chaveiro para resolver necessidades do dia a dia.",
   },
   {
-    title: "Atendimento prático",
-    text: "Orientação direta, orçamento claro e entrega combinada com você.",
+    title: "Preço justo",
+    text: "Valores acessíveis e orçamento claro antes do serviço.",
   },
 ]
 
@@ -63,8 +63,8 @@ export function AboutSection() {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg border-4 border-black bg-white shadow-lg">
           <Image
-            src="/image/suit-amendement.jpeg"
-            alt="Ajuste de roupa feito por costureira"
+            src="/image/about-us.jpeg"
+            alt="Real Park Sapataria e Costureira"
             fill
             sizes="(min-width: 1024px) 45vw, 100vw"
             className="object-cover"
@@ -75,25 +75,46 @@ export function AboutSection() {
             Sobre nós
           </p>
           <h2 className="mt-2 text-2xl font-bold text-black sm:text-4xl">
-            Um ponto completo para consertos e serviços úteis
+            A melhor escolha da região para resolver com qualidade e preço justo
           </h2>
           <p className="mt-5 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             A Real Park Sapataria e Costureira reúne serviços de sapataria,
             costura, chaveiro, xerox e foto 3x4 para ajudar você a resolver tudo
             com rapidez e atenção aos detalhes.
           </p>
+          <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            Somos conhecidos na região pelo atendimento honesto, pelo cuidado no
+            acabamento e pelos preços acessíveis. Aqui você encontra soluções
+            práticas para o dia a dia, desde um conserto simples até ajustes
+            que precisam de mais capricho e experiência.
+          </p>
+          <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            Nosso objetivo é entregar um serviço bem feito sem pesar no bolso.
+            Avaliamos cada pedido com atenção, explicamos o que pode ser feito e
+            buscamos sempre a melhor alternativa para o cliente. Por isso, quem
+            procura qualidade, agilidade e economia volta a escolher a Real Park.
+          </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <div className="border-l-4 border-red-600 bg-white p-4">
               <Clock className="size-6 text-red-600" aria-hidden="true" />
               <p className="mt-3 text-sm font-bold text-black">Agilidade</p>
+              <p className="mt-2 text-sm leading-6 text-slate-700">
+                Serviços rápidos para quem precisa resolver sem demora.
+              </p>
             </div>
             <div className="border-l-4 border-yellow-400 bg-white p-4">
               <ShieldCheck className="size-6 text-red-600" aria-hidden="true" />
-              <p className="mt-3 text-sm font-bold text-black">Confiança</p>
+              <p className="mt-3 text-sm font-bold text-black">Preço justo</p>
+              <p className="mt-2 text-sm leading-6 text-slate-700">
+                Valores acessíveis e orçamento claro antes do serviço.
+              </p>
             </div>
             <div className="border-l-4 border-black bg-white p-4">
               <Sparkles className="size-6 text-red-600" aria-hidden="true" />
               <p className="mt-3 text-sm font-bold text-black">Capricho</p>
+              <p className="mt-2 text-sm leading-6 text-slate-700">
+                Acabamento cuidadoso para sapatos, roupas, bolsas e acessórios.
+              </p>
             </div>
           </div>
         </div>
@@ -270,16 +291,24 @@ export function ContactSection() {
           <article className="rounded-lg border-2 border-black bg-white p-6 sm:col-span-2">
             <Clock className="size-7 text-red-600" aria-hidden="true" />
             <h3 className="mt-4 text-xl font-bold text-black">Horário de funcionamento</h3>
-            <div className="mt-4 grid gap-2 sm:grid-cols-2">
-              {businessHours.map((item) => (
-                <div
-                  key={item.day}
-                  className="flex flex-col gap-1 border-b border-slate-200 py-2 text-sm sm:flex-row sm:items-center sm:justify-between sm:gap-4"
-                >
-                  <span className="font-semibold text-black">{item.day}</span>
-                  <span className="text-slate-700">{item.hours}</span>
-                </div>
-              ))}
+            <div className="mt-4 overflow-hidden rounded-md border border-slate-200">
+              <table className="w-full border-collapse text-sm">
+                <tbody>
+                  {businessHours.map((item, index) => (
+                    <tr
+                      key={item.day}
+                      className={index % 2 === 0 ? "bg-yellow-50" : "bg-white"}
+                    >
+                      <th className="border-r border-slate-200 px-3 py-3 text-left font-semibold text-black sm:px-4">
+                        {item.day}
+                      </th>
+                      <td className="px-3 py-3 text-right font-medium text-slate-700 sm:px-4">
+                        {item.hours}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </article>
         </div>

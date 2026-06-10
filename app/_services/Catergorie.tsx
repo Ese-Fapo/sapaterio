@@ -54,16 +54,16 @@ const Catergorie = () => {
           {categories.map((category) => {
             const card = (
               <>
-                <div className="flex size-24 items-center justify-center rounded-full border-4 border-yellow-300 bg-white p-3 shadow-sm transition group-hover:border-red-600">
+                <div className="flex size-32 items-center justify-center rounded-full border-4 border-yellow-300 bg-white p-4 shadow-sm transition group-hover:border-red-600 sm:size-36">
                   <Image
                     src={category.image}
                     alt={`${category.name} icon`}
-                    width={72}
-                    height={72}
-                    className="size-16 object-contain"
+                    width={112}
+                    height={112}
+                    className="size-24 object-contain sm:size-28"
                   />
                 </div>
-                <h3 className="mt-5 text-lg font-bold text-black">
+                <h3 className="mt-6 text-2xl font-bold text-black">
                   {category.name}
                 </h3>
                 <span className="mt-4 inline-flex rounded-md bg-red-600 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-black">
@@ -72,7 +72,7 @@ const Catergorie = () => {
               </>
             )
 
-            const className = `group flex min-h-40 flex-col items-center justify-center rounded-lg border-2 ${category.accent} bg-white px-4 py-5 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-44 sm:py-6`
+            const className = `group flex min-h-56 flex-col items-center justify-center rounded-lg border-2 ${category.accent} bg-white px-4 py-6 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:min-h-64 sm:py-7`
 
             return (
               <Link key={category.name} href={category.href} className={className}>
