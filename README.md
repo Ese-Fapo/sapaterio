@@ -1,21 +1,31 @@
-# Next.js template
+# Sapaterio
 
-This is a Next.js template with shadcn/ui.
+Static Next.js site configured for Hostinger shared hosting.
 
-## Adding components
-
-To add components to your app, run the following command:
+## Local Development
 
 ```bash
-npx shadcn@latest add button
+npm install
+npm run dev
 ```
 
-This will place the ui components in the `components` directory.
+## Build For Hostinger
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+npm run build
 ```
+
+Next.js exports the production site to:
+
+```text
+out/
+```
+
+Upload the contents of `out/` to your Hostinger domain's `public_html` folder.
+
+## Deployment Notes
+
+- The site is exported as static files with `output: "export"`.
+- Hostinger shared hosting does not need `npm start` or a running Node.js server for this project.
+- Images are exported without Next.js image optimization so they work on static hosting.
+- Routes use trailing slashes so pages are exported as folders with `index.html`.
