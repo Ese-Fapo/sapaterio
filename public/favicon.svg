@@ -1,0 +1,8 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Real Park icon">
+  <rect width="512" height="512" rx="96" fill="#050505"/>
+  <rect x="46" y="46" width="420" height="420" rx="78" fill="#ffffff"/>
+  <circle cx="256" cy="232" r="142" fill="none" stroke="#061b3d" stroke-width="34"/>
+  <path d="M148 332h216" stroke="#b5121b" stroke-width="30" stroke-linecap="round"/>
+  <path d="M174 165h88c56 0 86 27 86 70 0 34-19 58-54 68l62 78h-64l-55-70h-13v70h-50V165Zm50 44v61h38c23 0 36-11 36-31s-13-30-36-30h-38Z" fill="#061b3d"/>
+  <path d="M148 383h216" stroke="#c89b36" stroke-width="14" stroke-linecap="round"/>
+</svg>

@@ -21,24 +21,24 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-yellow-300/30 bg-black/95 text-white shadow-sm backdrop-blur supports-[backdrop-filter]:bg-black/85">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8"> 
         <Link
           href="/"
           className="flex min-w-0 items-center gap-2 sm:gap-3"
           aria-label="Página inicial da Real Park Sapataria e Costureira"
           onClick={() => setIsMenuOpen(false)}
-        >
+        > 
           <Image
             src="/logo.svg"
             alt="Real Park Sapataria e Costureira"
-            width={56}
-            height={56}
-            className="size-10 shrink-0 rounded-lg sm:size-14"
+            width={220}
+            height={90}
+            className="h-12 w-auto max-w-[190px] shrink-0 rounded-md bg-white p-1 sm:h-14 sm:max-w-[250px]"
             priority
           />
           <div className="min-w-0 leading-tight">
             <p className="max-w-[13rem] truncate text-sm font-bold text-white sm:max-w-none sm:text-xl">
-              Real Park Sapataria e   Costureira
+              Sapataria e Costureira
             </p>
             <p className="hidden text-sm font-medium text-yellow-200 sm:block">
               Consertos, ajustes e serviços rápidos

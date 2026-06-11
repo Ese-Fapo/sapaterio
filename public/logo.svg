@@ -1,17 +1,47 @@
-<svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sapaterio logo">
+<svg viewBox="0 0 1024 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Real Park Sapataria e Costureira">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4f46e5" />
-      <stop offset="100%" stop-color="#0ea5e9" />
-    </linearGradient>
+    <style>
+      .navy { fill: #061b3d; }
+      .red { fill: #b5121b; }
+      .gold { fill: #c89b36; }
+      .stroke-navy { stroke: #061b3d; }
+      .stroke-red { stroke: #b5121b; }
+      .stroke-white { stroke: #ffffff; }
+    </style>
   </defs>
-  <rect width="280" height="280" rx="36" fill="#f8fafc" />
-  <circle cx="96" cy="96" r="76" fill="url(#grad)" opacity="0.14" />
-  <path d="M58 158c12-28 50-32 74-18 24 14 40 14 64-4" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round" />
-  <path d="M74 149c18-30 54-34 84-10" fill="none" stroke="#4338ca" stroke-width="16" stroke-linecap="round" />
-  <path d="M58 190h164" stroke="#0f172a" stroke-width="16" stroke-linecap="round" />
-  <path d="M186 60l32 32" stroke="#0f172a" stroke-width="16" stroke-linecap="round" />
-  <path d="M186 60h34v34" stroke="#0ea5e9" stroke-width="16" stroke-linecap="round" />
-  <text x="50%" y="236" text-anchor="middle" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">SAP</text>
-  <text x="50%" y="264" text-anchor="middle" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Sapaterio · 3x4</text>
+
+  <g transform="translate(24 28)">
+    <path d="M74 256C55 147 142 87 248 74" fill="none" class="stroke-navy" stroke-width="16" stroke-linecap="round"/>
+    <path d="M306 78c77 23 126 84 127 173" fill="none" class="stroke-navy" stroke-width="12" stroke-linecap="round"/>
+    <path d="M225 40c5-22 38-19 33 7l-79 333" fill="none" class="stroke-navy" stroke-width="28" stroke-linecap="round"/>
+    <path d="M225 40c5-22 38-19 33 7l-79 333" fill="none" class="stroke-white" stroke-width="10" stroke-linecap="round" opacity=".95"/>
+
+    <path d="M98 197c38-19 74-42 92-79 18 24 50 36 83 43-34 30-54 70-54 121-26 7-58 2-91-15-13 8-25 12-37 13-1-16 3-31 11-44-8-12-10-25-4-39z" class="red"/>
+    <path d="M119 193c20-10 43-25 60-47 14 15 33 25 57 33-24 22-38 50-43 86-19 0-40-5-63-17-8 5-15 8-23 10 0-9 3-18 8-26-5-12-4-25 4-39z" fill="none" class="stroke-white" stroke-width="5" stroke-dasharray="12 9" opacity=".9"/>
+
+    <path d="M43 303c47-65 119-111 187-95 36 8 53 46 37 79l92-50 41 67-122 74c-73 25-159 20-252 1 2-30 8-54 17-76z" class="navy"/>
+    <path d="M43 303c47-65 119-111 187-95 36 8 53 46 37 79l92-50 41 67-122 74c-73 25-159 20-252 1 2-30 8-54 17-76z" fill="none" class="stroke-white" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M255 292c34-7 58-26 75-58" fill="none" class="stroke-white" stroke-width="8" stroke-linecap="round"/>
+    <path d="M286 351l89-54" fill="none" class="stroke-red" stroke-width="9" stroke-linecap="round"/>
+    <path d="M83 331c57 8 113 2 166-18" fill="none" class="stroke-white" stroke-width="7" stroke-linecap="round"/>
+    <path d="M122 254c25 7 49 19 72 35" fill="none" class="stroke-white" stroke-width="8" stroke-linecap="round"/>
+    <path d="M106 273c23 6 46 17 68 32" fill="none" class="stroke-white" stroke-width="8" stroke-linecap="round"/>
+    <path d="M94 295c18 4 36 12 54 23" fill="none" class="stroke-white" stroke-width="8" stroke-linecap="round"/>
+
+    <path d="M182 150c34-56 101-95 149-86 55 10 54 66 22 110-16 21-36 38-57 50 58 12 103 53 91 105" fill="none" class="stroke-red" stroke-width="12" stroke-linecap="round"/>
+    <path d="M273 192c56-36 103-67 112-112" fill="none" class="stroke-red" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(458 118)">
+    <text x="0" y="96" class="navy" font-family="Arial Black, Impact, Arial, sans-serif" font-size="120" font-style="italic" font-weight="900">REAL</text>
+    <text x="-4" y="220" class="red" font-family="Arial Black, Impact, Arial, sans-serif" font-size="126" font-style="italic" font-weight="900">PARK</text>
+    <line x1="-6" y1="292" x2="245" y2="292" class="gold" stroke-width="6" stroke-linecap="round"/>
+    <line x1="326" y1="292" x2="560" y2="292" class="gold" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(270 270)">
+      <rect x="18" y="0" width="35" height="54" rx="6" class="gold"/>
+      <path d="M14 8c22 8 43 8 65 0M14 18c22 8 43 8 65 0M14 28c22 8 43 8 65 0M14 38c22 8 43 8 65 0M14 48c22 8 43 8 65 0" fill="none" stroke="#fff4d0" stroke-width="4" stroke-linecap="round"/>
+      <path d="M35 53v19" fill="none" class="gold" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="360" class="navy" font-family="Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="12">SAPATARIA E COSTUREIRA</text>
+  </g>
 </svg>

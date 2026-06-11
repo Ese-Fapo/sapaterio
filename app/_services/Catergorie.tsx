@@ -39,6 +39,13 @@ const categories = [
     description: "Impressões e cópias com qualidade, preço justo e entrega rápida.",
     href: "/xerox",
   },
+  {
+    name: "Vendas",
+    image: "/bota-icon.jpg",
+    accent: "border-red-600",
+    description: "Botas femininas de inverno, pretas, disponiveis do BR 34 ao 39.",
+    href: "/vendas",
+  },
 ]
 
 const Catergorie = () => {
@@ -55,7 +62,7 @@ const Catergorie = () => {
           <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-red-600" />
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {categories.map((category) => {
             const card = (
               <>
