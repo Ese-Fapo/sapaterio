@@ -7,6 +7,18 @@ const siteUrl = "https://realpark.com.br"
 const siteName = "Real Park Sapataria e Costureira"
 const siteDescription =
   "Servicos de sapataria, costureira, xerox, chaveiro e foto 3x4 com atendimento rapido e profissional."
+const logoUrl = "/logo.svg"
+const shareImageUrl = "/og-image.png"
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: siteName,
+  description: siteDescription,
+  url: siteUrl,
+  logo: `${siteUrl}${logoUrl}`,
+  image: `${siteUrl}${shareImageUrl}`,
+}
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -25,7 +37,7 @@ export const metadata = {
   icons: [
     { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
     { rel: "shortcut icon", url: "/favicon.svg", type: "image/svg+xml" },
-    { rel: "apple-touch-icon", url: "/favicon.svg", type: "image/svg+xml" },
+    { rel: "apple-touch-icon", url: logoUrl, type: "image/svg+xml" },
   ],
   openGraph: {
     title: siteName,
@@ -36,10 +48,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: shareImageUrl,
         width: 1200,
         height: 630,
-        alt: siteName,
+        alt: `${siteName} logo`,
       },
     ],
   },
@@ -47,7 +59,7 @@ export const metadata = {
     card: "summary_large_image",
     title: siteName,
     description: siteDescription,
-    images: ["/og-image.png"],
+    images: [shareImageUrl],
   },
 }
 
@@ -67,6 +79,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className="antialiased"
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="bg-white">
         <ThemeProvider>
           <div className="min-h-screen bg-white">
