@@ -9,6 +9,7 @@ const siteDescription =
   "Servicos de sapataria, costureira, xerox, chaveiro e foto 3x4 com atendimento rapido e profissional."
 const logoUrl = "/logo.svg"
 const shareImageUrl = "/og-image.png"
+const shareImageAbsoluteUrl = `${siteUrl}${shareImageUrl}`
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -17,7 +18,7 @@ const structuredData = {
   description: siteDescription,
   url: siteUrl,
   logo: `${siteUrl}${logoUrl}`,
-  image: `${siteUrl}${shareImageUrl}`,
+  image: shareImageAbsoluteUrl,
 }
 
 export const metadata = {
@@ -48,7 +49,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: shareImageUrl,
+        url: shareImageAbsoluteUrl,
         width: 1200,
         height: 630,
         alt: `${siteName} logo`,
@@ -59,7 +60,7 @@ export const metadata = {
     card: "summary_large_image",
     title: siteName,
     description: siteDescription,
-    images: [shareImageUrl],
+    images: [shareImageAbsoluteUrl],
   },
 }
 

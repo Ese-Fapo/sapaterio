@@ -322,10 +322,10 @@ export function ContactSection() {
 
 export function Footer() {
   return (
-    <footer className="bg-black px-4 py-10 text-white sm:px-6 lg:px-8">
-      <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr]">
-        <div>
-          <p className="text-lg font-bold sm:text-xl">Real Park Sapataria e Costureira</p>
+    <footer className="relative bg-black px-4 pt-10 pb-24 text-white sm:px-6 sm:pt-12 sm:pb-28 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr]">
+        <div className="sm:col-span-2 lg:col-span-1">
+          <p className="text-lg font-semibold sm:text-xl text-yellow-300">Real Park Sapataria e Costureira</p>
           <p className="mt-3 max-w-md text-sm leading-7 text-slate-300">
             Consertos, ajustes, foto 3x4, chaveiro e xerox com atendimento
             simples, rápido e cuidadoso.
@@ -373,7 +373,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-8 flex max-w-7xl flex-col gap-2 border-t border-white/15 pt-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 Real Park Sapataria e Costureira. Todos os direitos reservados.</p>
-        <p>
+        <p className="z-20 bg-black/90 px-2 py-1 text-right text-sm text-slate-300 shadow-sm sm:text-base">
           Desenvolvido por{" "}
           <a
             href="https://sitesprofissionai.com/"
@@ -396,7 +396,7 @@ export function FloatingActions() {
         href={whatsappLink}
         target="_blank"
         rel="noreferrer"
-        className="whatsapp-beat relative flex size-16 items-center justify-center rounded-full bg-[#25d366] text-white shadow-2xl ring-4 ring-white transition hover:-translate-y-0.5 hover:bg-[#1ebe5d] sm:size-20"
+        className="whatsapp-beat relative flex h-16 w-16 items-center justify-center rounded-full bg-[#25d366] text-white shadow-2xl ring-4 ring-white transition hover:-translate-y-0.5 hover:bg-[#1ebe5d] sm:h-20 sm:w-20"
         aria-label="Enviar mensagem pelo WhatsApp"
       >
         <span className="absolute inset-0 rounded-full bg-[#25d366]/40" aria-hidden="true" />
