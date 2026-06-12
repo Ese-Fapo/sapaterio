@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Header from "./_components/Header"
 import { FloatingActions, Footer } from "./_components/HomeSections"
 
-const siteUrl = "https://realpark.com.br"
+const siteUrl = "https://www.sapatariarealpark.com.br"
 const siteName = "Real Park Sapataria e Costureira"
 const siteDescription =
   "Servicos de sapataria, costureira, xerox, chaveiro e foto 3x4 com atendimento rapido e profissional."
