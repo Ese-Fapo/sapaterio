@@ -87,6 +87,20 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <meta property="og:title" content={siteName} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={shareImageAbsoluteUrl} />
+        <meta property="og:image:secure_url" content={shareImageAbsoluteUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content={shareImageType} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteName} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:image" content={shareImageAbsoluteUrl} />
+        <meta name="twitter:image:src" content={shareImageAbsoluteUrl} />
       </head>
       <body className="bg-white">
         <ThemeProvider>
