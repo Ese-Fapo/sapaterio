@@ -35,7 +35,7 @@ export default function VendasPage() {
             </h1>
             <p className="mt-4 text-base leading-7 text-slate-200 sm:text-lg">
               Botas femininas pretas, do mesmo modelo de inverno, disponiveis
-              nos tamanhos BR 34, 35, 36, 37, 38 e 39.
+              nos tamanhos :34, 35, 36, 37, 38 e 39.
             </p>
           </div>
         </div>
