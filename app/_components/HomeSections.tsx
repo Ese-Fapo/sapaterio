@@ -354,6 +354,7 @@ export function Footer() {
           <p className="font-bold text-yellow-300">Contacto</p>
           <div className="mt-3 grid gap-2 text-sm leading-6 text-slate-300">
             <p className="break-words">{address}</p>
+            <p className="font-semibold text-slate-100">CNPJ: 45.041.116/0001-07</p>
             <a
               href={googleLocationLink}
               target="_blank"

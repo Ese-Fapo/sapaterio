@@ -10,6 +10,7 @@ const siteDescription =
 const logoUrl = "/logo.svg"
 const shareImageUrl = "/og-image.png"
 const shareImageAbsoluteUrl = `${siteUrl}${shareImageUrl}`
+const shareImageType = "image/png"
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -40,6 +41,12 @@ export const metadata = {
     { rel: "shortcut icon", url: "/favicon.svg", type: "image/svg+xml" },
     { rel: "apple-touch-icon", url: logoUrl, type: "image/svg+xml" },
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: siteDescription,
+    images: [shareImageAbsoluteUrl],
+  },
   openGraph: {
     title: siteName,
     description: siteDescription,
@@ -53,14 +60,9 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: `${siteName} logo`,
+        type: shareImageType,
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteName,
-    description: siteDescription,
-    images: [shareImageAbsoluteUrl],
   },
 }
 
