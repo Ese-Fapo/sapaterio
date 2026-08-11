@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
+import { googleReviewLink } from "./HomeSections"
 
 const Hero = () => {
   return (
@@ -39,6 +40,14 @@ const Hero = () => {
           >
             Falar conosco
           </Link>
+          <a
+            href={googleReviewLink}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-[#4285F4] via-[#34A853] to-[#FBBC05] px-5 py-3 text-sm font-bold text-black transition hover:brightness-95"
+          >
+            Avaliar no Google
+          </a>
         </div>
       </div>
     </section>
