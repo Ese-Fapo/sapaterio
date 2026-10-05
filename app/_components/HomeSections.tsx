@@ -49,12 +49,12 @@ const testimonials = [
 ]
 
 const businessHours = [
-  { day: "Segunda-feira", hours: "9h às 18h" },
-  { day: "Terça-feira", hours: "7h30 às 18h" },
-  { day: "Quarta-feira", hours: "7h30 às 18h" },
-  { day: "Quinta-feira", hours: "9h às 18h" },
-  { day: "Sexta-feira", hours: "7h30 às 18h" },
-  { day: "Sábado", hours: "Fechado" },
+  { day: "Segunda-feira", hours: "9h às 18h30" },
+  { day: "Terça-feira", hours: "8h às 18h30" },
+  { day: "Quarta-feira", hours: "8h às 18h30" },
+  { day: "Quinta-feira", hours: "9h às 18h30" },
+  { day: "Sexta-feira", hours: "8h às 18h30" },
+  { day: "Sábado", hours: "9h às 14h" },
   { day: "Domingo", hours: "Fechado" },
 ]
 
